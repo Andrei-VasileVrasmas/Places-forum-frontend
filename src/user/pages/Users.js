@@ -8,8 +8,8 @@ const Users = () => {
       id: "u1",
       name: "Diablo Caliente",
       image:
-        "https://www.pexels.com/photo/person-wearing-white-and-purple-mask-6155875/",
-      places: "3",
+        "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      places: 3,
     },
   ];
 
