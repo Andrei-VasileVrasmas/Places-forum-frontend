@@ -83,8 +83,7 @@ const Auth = () => {
             "Content-Type": "application/json",
           }
         );
-
-        auth.login(responseData.user.id);
+        auth.login(responseData.userId, responseData.token);
       } catch (e) {
         console.log(e);
       }
@@ -101,7 +100,7 @@ const Auth = () => {
           formData
         );
 
-        auth.login(responseData.user.id);
+        auth.login(responseData.userId, responseData.token);
       } catch (e) {
         console.log(e);
       }
@@ -128,7 +127,12 @@ const Auth = () => {
             />
           )}
           {!isLoginMode && (
-            <ImageUpload center id="image" onInput={inputHandler} />
+            <ImageUpload
+              center
+              id="image"
+              onInput={inputHandler}
+              errorText="Please select an image..."
+            />
           )}
           <Input
             id="email"
